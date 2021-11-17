@@ -4,6 +4,10 @@ $(function () {
 });
 
 $(function () {
+  $("#main_image").load("../components/main_image.html");
+});
+
+$(function () {
   $("#footer").load("../components/footer.html");
 });
 
