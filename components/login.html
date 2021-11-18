@@ -1,0 +1,30 @@
+<div id="login_popup" class="popup">
+  <div id="login_popup_content" class="popup_content">
+    <span class="close_popup_button" onclick="togglePopup('login_popup')"
+      >×</span
+    >
+    <h2 class="form_header">Log in</h2>
+    <div class="login_form">
+      <div class="input_group">
+        <label class="input_label">Username:</label>
+        <input
+          type="text"
+          name="username"
+          id="username_login"
+          class="form_input"
+        />
+      </div>
+      <div class="input_group">
+        <label class="input_label">Password:</label>
+        <input
+          type="password"
+          name="password"
+          id="password_login"
+          class="form_input"
+        />
+      </div>
+      <button class="form_btn" onclick="login()">Log in</button>
+      <p id="output_login"></p>
+    </div>
+  </div>
+</div>

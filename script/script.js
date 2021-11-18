@@ -6,6 +6,13 @@ $(function () {
 $(function () {
   $("#main_image").load("../components/main_image.html");
 });
+$(function () {
+  $("#login").load("../components/login.html");
+});
+
+$(function () {
+  $("#signup").load("../components/signup.html");
+});
 
 $(function () {
   $("#footer").load("../components/footer.html");
