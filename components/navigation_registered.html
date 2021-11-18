@@ -30,16 +30,37 @@
           >Planatrip</a
         >
       </li>
-      <li class="nav-item">
-        <a class="btn btn-outline" onclick="togglePopup('signup_popup')"
-          >Signup</a
-        >
-      </li>
 
-      <li class="nav-item">
-        <a class="btn btn-outline" onclick="togglePopup('login_popup')"
-          >Login</a
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
         >
+          <img
+            src="../images/avatar.png"
+            width="30"
+            height="30"
+            class="d-inline-block align-top"
+            alt="Avatar"
+          />
+        </a>
+
+        <div
+          class="dropdown-menu dropdown-menu-right"
+          aria-labelledby="navbarDropdown"
+        >
+          <a class="dropdown-item" href="#">My profile</a>
+          <a class="dropdown-item" href="#">Add experience</a>
+          <a class="dropdown-item" href="#">My experiences</a>
+
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Log out</a>
+        </div>
       </li>
     </ul>
   </div>
