@@ -1,4 +1,4 @@
-var guest = true;
+localStorage.setItem("loggedin", false);
 
 //validate password
 const validate_password = (password) => {
@@ -43,20 +43,6 @@ const check_if_email_exists = (email) => {
   } else {
     return false;
   }
-};
-
-const fillUserProfile = (user) => {
-  const uname = document.getElementById("user_username");
-  const name = document.getElementById("user_name");
-  const email = document.getElementById("user_email");
-  const birthday = document.getElementById("user_birthday");
-  const profileImage = document.getElementById("profile_image");
-
-  uname.value = user.username;
-  name.value = user.firstname + " " + user.surname;
-  email.value = user.email;
-  birthday.value = user.birthdate;
-  profileImage.value = user.profileimg;
 };
 
 const signup = () => {
@@ -130,9 +116,10 @@ const signup = () => {
   }
 
   //Changes header based on logged in state
-  guest = false;
-  $("#navigation").load("../components/navigation_registered.html");
+  //localStorage.setItem("loggedin", true);
   togglePopup("signup_popup");
+  $("#navigation").load("../components/navigation_registered.html");
+
   //fillUserProfile(new_user);
   clear_signup();
 };
@@ -165,11 +152,12 @@ const login = () => {
   }
 
   //reset header style
-  guest = false;
-  $("#navigation").load("../components/navigation_registered.html");
 
+  $("#navigation").load("../components/navigation_registered.html");
   //close popup
+  //localStorage.setItem("loggedin", true);
   togglePopup("login_popup");
+  //document.location.reload();
 
   //fill user profile fields
   //fillUserProfile(user[0]);
@@ -182,9 +170,8 @@ const logout = () => {
   if (confirm("You sure you want to log out?")) {
     //set currentuser to empty string
     localStorage.setItem("current_user", "");
-
-    //reset header style
-    guest = true;
+    //localStorage.setItem("loggedin", false);
+    //document.location.reload();
     $("#navigation").load("../components/navigation.html");
   } else {
     return;
