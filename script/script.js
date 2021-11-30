@@ -13,4 +13,5 @@ $(function () {
   $("#myexperiences_title").load("../components/myexperiences_title.html");
   $("#myexperiences_toolbar").load("../components/myexperiences_toolbar.html");
   $("#myexperiences_posts").load("../components/myexperiences_posts.html");
+  $("#add_experience").load("../components/add_experience.html");
 });
