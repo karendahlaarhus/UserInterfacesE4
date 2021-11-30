@@ -1,17 +1,25 @@
-localStorage.setItem("loggedin", false);
+const navigation = document.getElementById("navigation_guest");
+const navigation_reg = document.getElementById("navigation_registered");
 
-//validate password
+const checkLoggedInStatus = () => {
+  if (localStorage.getItem("current_user") == "") {
+    navigation.style.display = "block";
+    navigation_reg.style.display = "none";
+  } else {
+    navigation.style.display = "none";
+    navigation_reg.style.display = "block";
+  }
+};
+
 const validate_password = (password) => {
   const re = /^[a-zA-Z0-9]{0,9}$/;
   return re.test(String(password).toLowerCase());
 };
 
-//check if user key exists in localstorage
 const check_if_localstorage_exists = (key) => {
   return localStorage.getItem(key) !== null;
 };
 
-//check if username exists
 const check_if_username_exists = (username) => {
   if (check_if_localstorage_exists("registered_users")) {
     const registered_users = JSON.parse(
@@ -28,7 +36,6 @@ const check_if_username_exists = (username) => {
   }
 };
 
-//check if email is in use
 const check_if_email_exists = (email) => {
   if (check_if_localstorage_exists("registered_users")) {
     const registered_users = JSON.parse(
@@ -46,7 +53,6 @@ const check_if_email_exists = (email) => {
 };
 
 const signup = () => {
-  //get all input data from user
   const username_input = document.getElementById("username_input").value;
   const password_input = document.getElementById("password_input").value;
   const firstname_input = document.getElementById("firstname_input").value;
@@ -57,25 +63,21 @@ const signup = () => {
   const terms = document.getElementById("terms").checked;
   const output_signup = document.getElementById("output_signup");
 
-  //Validate password
   if (!validate_password(password_input)) {
     output_signup.innerHTML = "Password can only contain letters and numbers";
     return;
   }
 
-  //Check if user has agreed to terms
   if (!terms) {
     output_signup.innerHTML = "Terms and conditions need to be accepted";
     return;
   }
 
-  //Check if username has been used previously
   if (check_if_username_exists(username_input)) {
     output_signup.innerHTML = "This username is already in use.";
     return;
   }
 
-  //Check that required fields are not empty
   if (
     username_input == "" ||
     password_input == "" ||
@@ -86,13 +88,12 @@ const signup = () => {
     output_signup.innerHTML = "None of the required fields can be left empty.";
     return;
   }
-  //Check if e-mail has been used previously
+
   if (check_if_email_exists(email_input)) {
     output_signup.innerHTML = "This e-mail is already in use.";
     return;
   }
 
-  //If all validators are passed, create new user
   const new_user = {
     username: username_input,
     password: password_input,
@@ -114,13 +115,12 @@ const signup = () => {
   } else {
     localStorage.setItem("registered_users", JSON.stringify([new_user]));
   }
+  localStorage.setItem("current_user", new_user.username);
 
   //Changes header based on logged in state
-  //localStorage.setItem("loggedin", true);
+  navigation.style.display = "none";
+  navigation_reg.style.display = "block";
   togglePopup("signup_popup");
-  $("#navigation").load("../components/navigation_registered.html");
-
-  //fillUserProfile(new_user);
   clear_signup();
 };
 
@@ -152,12 +152,11 @@ const login = () => {
   }
 
   //reset header style
+  navigation.style.display = "none";
+  navigation_reg.style.display = "block";
 
-  $("#navigation").load("../components/navigation_registered.html");
   //close popup
-  //localStorage.setItem("loggedin", true);
   togglePopup("login_popup");
-  //document.location.reload();
 
   //fill user profile fields
   //fillUserProfile(user[0]);
@@ -168,11 +167,10 @@ const login = () => {
 
 const logout = () => {
   if (confirm("You sure you want to log out?")) {
-    //set currentuser to empty string
     localStorage.setItem("current_user", "");
-    //localStorage.setItem("loggedin", false);
-    //document.location.reload();
-    $("#navigation").load("../components/navigation.html");
+
+    navigation.style.display = "block";
+    navigation_reg.style.display = "none";
   } else {
     return;
   }

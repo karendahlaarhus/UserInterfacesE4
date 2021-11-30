@@ -19,7 +19,7 @@ body {
 }
 
 .title {
-  background-color: #8dbee0;
+  background-color: #407ba5;
   margin: auto;
   width: 40%;
   text-align: center;
@@ -36,10 +36,26 @@ body {
   font-style: italic;
 }
 
-/* #navigation_guest {
+#navigation_guest {
   display: block;
 }
 #navigation_registered {
   display: none;
 }
- */
+
+/* Top posts */
+.row {
+  padding: 1rem 0;
+}
+.card-img-top {
+  height: 12rem;
+  width: auto;
+  overflow: hidden;
+}
+
+/* Top users */
+.avatar {
+  height: 17rem;
+  width: auto;
+  overflow: hidden;
+}

@@ -23,14 +23,135 @@
     <link rel="stylesheet" href="./style/popup.css" />
     <title class="title">Travelmondo</title>
   </head>
-  <body>
-    <header id="navigation"></header>
+  <body onload="checkLoggedInStatus()">
+    <header id="navigation_guest">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img
+              src="../images/logo.png"
+              width="30"
+              height="30"
+              class="d-inline-block align-top"
+              alt=""
+            />
+            TRAVELMONDO
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                type="button"
+                class="btn btn-light btn-block"
+                href="../plantrip.html"
+                >Planatrip</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline" onclick="togglePopup('signup_popup')"
+                >Signup</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="btn btn-outline" onclick="togglePopup('login_popup')"
+                >Login</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <header id="navigation_registered">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img
+              src="../images/logo.png"
+              width="30"
+              height="30"
+              class="d-inline-block align-top"
+              alt=""
+            />
+            TRAVELMONDO
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                type="button"
+                class="btn btn-light btn-block"
+                href="../plantrip.html"
+                >Planatrip</a
+              >
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <img
+                  src="../images/avatar.png"
+                  width="30"
+                  height="30"
+                  class="d-inline-block align-top"
+                  alt="Avatar"
+                />
+              </a>
+
+              <div
+                class="dropdown-menu dropdown-menu-right"
+                aria-labelledby="navbarDropdown"
+              >
+                <a class="dropdown-item" href="#">My profile</a>
+                <a class="dropdown-item" href="#">Add experience</a>
+                <a class="dropdown-item" href="#">My experiences</a>
+
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#" onclick="logout()">Log out</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
     <div class="">
       <div id="main_image"></div>
       <div id="home_title"></div>
     </div>
-
     <main class="flex-shrink-0">
       <div class="container">
         <div id="login"></div>
