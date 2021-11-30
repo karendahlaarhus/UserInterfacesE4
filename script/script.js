@@ -11,4 +11,6 @@ $(function () {
   $("#home_title").load("../components/title_home.html");
   $("#plan_title").load("../components/title_plantrip.html");
   $("#myexperiences_title").load("../components/myexperiences_title.html");
+  $("#myexperiences_toolbar").load("../components/myexperiences_toolbar.html");
+  $("#myexperiences_posts").load("../components/myexperiences_posts.html");
 });

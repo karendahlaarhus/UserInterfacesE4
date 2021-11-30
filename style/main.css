@@ -42,6 +42,9 @@ body {
 #navigation_registered {
   display: none;
 }
+.col-sm {
+  text-align: -webkit-center;
+}
 
 /* Top posts */
 .row {
@@ -58,4 +61,17 @@ body {
   height: 17rem;
   width: auto;
   overflow: hidden;
+}
+
+.toolbar {
+  text-align: end;
+}
+
+.toolbar_icon {
+  width: 3rem;
+  margin: 10px;
+}
+
+.add {
+  width: 2.5rem;
 }
