@@ -1,4 +1,4 @@
-/* // Filter popular users based in written in search field. 
+// Filter popular users based in written in search field. 
 $(".form-control me-2").on("keyup", function() {
     var value = $(this).val().toLowerCase();
     // Filter popular posts
@@ -13,9 +13,9 @@ $(".form-control me-2").on("keyup", function() {
     });
   });
 
-   */
 
-const searchButton = document.getElementById("search_button"); //receives search-button
+
+/* const searchButton = document.getElementById("search_button"); //receives search-button
 const resetButton = document.getElementById("reset-button"); //receives set-button
 const searchInput = document.getElementById("search_input"); //receives search_input
 const cardContainer = document.getElementById("experiences-list"); //receives experiences-list
@@ -62,4 +62,4 @@ const handleClickResetButton = () => {
 };
 
 searchButton.addEventListener("click", handleClickSearchButton);
-resetButton.addEventListener("click", handleClickResetButton);
+resetButton.addEventListener("click", handleClickResetButton); */
