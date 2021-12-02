@@ -1,7 +1,7 @@
 function like(postnr) {
-  const likecountSmall = document.getElementById("smallLike" + postnr);
+  const likecountSmall = document.getElementById("like" + postnr);
   const likecountPopup = document.getElementById("popupLike" + postnr);
-  var heartIconSmall = document.getElementById("heartSmall" + postnr);
+  var heartIconSmall = document.getElementById("heart" + postnr);
   var heartIconPopup = document.getElementById("heartPopup" + postnr);
 
   console.log(likecountSmall);
