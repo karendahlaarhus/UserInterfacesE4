@@ -5,9 +5,22 @@
       onclick="togglePopup('addexperience_popup')"
       >×</span
     >
-    <h2 class="form_header">Add experience</h2>
+    <h2 class="form_header">Add a new experience</h2>
+    <input
+      type="text"
+      name="title"
+      id="experienceTitle"
+      placeholder="Add title here"
+    />
+    <p>Add collaborator here</p>
+    <input type="file" id="experienceImg" name="img" accept="image/*" />
+    <input
+      type="textarea"
+      placeholder="Add a description here"
+      id="experienceDesc"
+    />
     <div id="add_experience_form">
-      <button id="post_experience_button" class="form_btn" onclick="signup()">
+      <button id="post_experience_button" class="form_btn" onclick="add()">
         Post
       </button>
     </div>
