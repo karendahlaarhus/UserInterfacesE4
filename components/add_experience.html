@@ -6,62 +6,10 @@
       >×</span
     >
     <h2 class="form_header">Add experience</h2>
-    <div id="signup_form">
-      <div class="input_group">
-        <label class="input_label">Username:</label>
-        <input type="text" id="username_input" class="form_input" required />
-      </div>
-      <div class="input_group">
-        <label class="input_label">Password:</label>
-        <input
-          type="password"
-          id="password_input"
-          class="form_input"
-          required
-        />
-      </div>
-      <p class="form_section_title">
-        <strong>Personal information</strong>
-      </p>
-      <div class="input_group">
-        <label class="input_label">Name: </label>
-        <input type="text" id="firstname_input" class="form_input" required />
-      </div>
-      <div class="input_group">
-        <label class="input_label">Surname: </label>
-        <input type="text" id="surname_input" class="form_input" required />
-      </div>
-      <div class="input_group">
-        <label class="input_label">Email: </label>
-        <input type="email" id="email_input" class="form_input" required />
-      </div>
-      <div class="input_group">
-        <label class="input_label">Date of birth: </label>
-        <input type="date" id="birthdate_input" class="form_input" required />
-      </div>
-      <div class="input_group">
-        <label class="input_label">Profile picture: </label>
-        <input type="file" id="profileimg_input" class="form_input" />
-      </div>
-      <div class="input_group">
-        <label class="input_label"
-          >I have read and accepted the Terms of Use</label
-        >
-        <input type="checkbox" id="terms" class="form_input" required />
-      </div>
-
-      <button
-        id="delete_button"
-        class="form_btn_smaller"
-        onclick="clear_signup()"
-      >
-        Delete
+    <div id="add_experience_form">
+      <button id="post_experience_button" class="form_btn" onclick="signup()">
+        Post
       </button>
-      <br />
-      <button id="signup_button" class="form_btn" onclick="signup()">
-        Sign up
-      </button>
-      <p id="output_signup"></p>
     </div>
   </div>
 </div>

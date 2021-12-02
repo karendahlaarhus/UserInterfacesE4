@@ -99,6 +99,13 @@
   cursor: pointer;
 }
 
+.show_map_popup {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
 /* Styling login and signup forms */
 .input_group {
   margin: 5px 0;

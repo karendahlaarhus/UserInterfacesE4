@@ -92,3 +92,12 @@ body {
 .social_bar p {
   margin: 0;
 }
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.card img:hover {
+  cursor: pointer;
+}
