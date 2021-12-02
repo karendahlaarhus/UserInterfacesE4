@@ -1,14 +1,14 @@
-function add() {
-  addExperience();
+function addExperience() {
+  add();
   togglePopup("addexperience_popup");
 }
 
-const addExperience = () => {
+const add = () => {
   const desc = document.getElementById("experienceDesc").value;
 
   const allRows = document.querySelectorAll(".row");
   const existingRow = allRows.length;
-  const newRowNr = rows.length + 1;
+  const newRowNr = allRows.length + 1;
 
   const myExperiencesDiv = document.getElementById("myexperiences_posts");
   const rowDiv = document.getElementById("row" + existingRow);
@@ -53,5 +53,9 @@ const addExperience = () => {
       </div>
     </div>`;
   }
+};
+
+const createCollection = () => {
+  togglePopup("create_collection_popup");
 };
 const deleteExperience = () => {};
