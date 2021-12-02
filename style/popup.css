@@ -24,6 +24,18 @@
   z-index: 1;
 }
 
+.experience_popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1rem 1.5rem;
+  width: 45rem;
+  border-radius: 0.5rem;
+  z-index: 1;
+}
+
 .close_popup_button {
   float: right;
   width: 1.5rem;
@@ -45,65 +57,9 @@
   z-index: 1;
 }
 
-.popup img {
-  width: 200px;
-}
-
-/* STYLING FOR MAP-POPUS */
-.modal {
-  visibility: hidden;
-  background-color: rgba(0, 0, 0, 0.5);
-  transform: scale(1.1);
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 1;
-}
-
-.modal_content {
-  position: absolute;
-  transform: translate(-50%);
-  background-color: white;
-  width: 70rem;
-  top: 5%;
-  left: 50%;
-  bottom: 20%;
-  padding: 1rem 1.5rem;
-  border-radius: 0.5rem;
-  overflow-y: scroll;
-  z-index: 1;
-}
-
-.modal_content img {
-  left: 10%;
-  right: 10%;
-  width: 100%;
-  z-index: 1;
-}
-
-.close {
-  float: right;
-  width: 1.5rem;
-  line-height: 1.5rem;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 0.25rem;
-  background-color: lightgray;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.show_map_popup {
-  opacity: 1;
-  visibility: visible;
-  transform: scale(1);
-  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+.popup .main_picture {
+  width: 350px;
+  height: auto;
 }
 
 /* Styling login and signup forms */
