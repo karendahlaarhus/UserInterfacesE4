@@ -75,3 +75,20 @@ body {
 .add {
   width: 2.5rem;
 }
+
+.card-icon {
+  width: 1rem;
+  margin-right: 20px;
+  margin-left: 5px;
+}
+.social_bar {
+  margin: 0;
+  border-top: solid lightgray 0.1px;
+  display: flex;
+  align-items: baseline;
+  justify-content: end;
+}
+
+.social_bar p {
+  margin: 0;
+}
