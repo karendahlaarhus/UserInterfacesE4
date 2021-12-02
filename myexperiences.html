@@ -131,11 +131,15 @@
               </a>
 
               <div
-                class="dropdown-menu dropdown-menu-right"
+                class="dropdown-menu dropdown-menu-end"
                 aria-labelledby="navbarDropdown"
               >
                 <a class="dropdown-item" href="#">My profile</a>
-                <a class="dropdown-item" href="#">Add experience</a>
+                <a
+                  class="dropdown-item"
+                  onclick="togglePopup('addexperience_popup')"
+                  >Add experience</a
+                >
                 <a class="dropdown-item" href="/myexperiences.html"
                   >My experiences</a
                 >
@@ -156,6 +160,7 @@
       <div class="container">
         <div id="login"></div>
         <div id="signup"></div>
+        <div id="add_experience"></div>
         <div class="myexperiences">
           <div id="myexperiences_toolbar" class="myexperiences_toolbar"></div>
           <div id="myexperiences_posts"></div>
@@ -166,6 +171,7 @@
     <script src="./script/script.js"></script>
     <script src="./script/login_signup.js"></script>
     <script src="./script/popup.js"></script>
+    <script src="./script/experiences.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
