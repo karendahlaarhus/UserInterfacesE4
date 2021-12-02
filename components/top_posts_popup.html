@@ -22,11 +22,22 @@
       Pellentesque pretium orci viverra, condimentum sem a, dignissim sapien.
     </p>
     <div class="social_bar">
-      <p class="like_count">432</p>
-      <img class="card-icon" src="../images/icons/heart.svg" alt="" />
+      <p class="like_count" id="popupLike1">432</p>
+      <img
+        class="card-icon"
+        src="../images/icons/heart.svg"
+        alt="Like post"
+        id="heartPopup1"
+        onclick="like(1)"
+      />
       <p class="comment_count">54</p>
       <img class="card-icon" src="../images/icons/chat-left-quote.svg" alt="" />
-      <img class="card-icon" src="../images/icons/share.svg" alt="" />
+      <img
+        class="card-icon"
+        src="../images/icons/share.svg"
+        alt="Share to facebook"
+        onclick="share()"
+      />
     </div>
   </div>
 </div>
@@ -57,11 +68,22 @@
       dignissim sapien mattis, pharetra libero. Mauris sit amet augue in dolor
     </p>
     <div class="social_bar">
-      <p class="like_count">412</p>
-      <img class="card-icon" src="../images/icons/heart.svg" alt="" />
+      <p class="like_count" id="popupLike2">412</p>
+      <img
+        class="card-icon"
+        src="../images/icons/heart.svg"
+        alt="Like post"
+        id="heartPopup2"
+        onclick="like(2)"
+      />
       <p class="comment_count">13</p>
       <img class="card-icon" src="../images/icons/chat-left-quote.svg" alt="" />
-      <img class="card-icon" src="../images/icons/share.svg" alt="" />
+      <img
+        class="card-icon"
+        src="../images/icons/share.svg"
+        alt="Share to facebook"
+        onclick="share()"
+      />
     </div>
   </div>
 </div>
@@ -91,180 +113,276 @@
       ac vitae metus. Proin a accumsan justo. Suspendisse a orci feugiat,
     </p>
     <div class="social_bar">
-      <p class="like_count">372</p>
-      <img class="card-icon" src="../images/icons/heart.svg" alt="" />
+      <p class="like_count" id="popupLike3">372</p>
+      <img
+        class="card-icon"
+        src="../images/icons/heart.svg"
+        alt="Like post"
+        id="heartPopup3"
+        onclick="like(3)"
+      />
       <p class="comment_count">40</p>
       <img class="card-icon" src="../images/icons/chat-left-quote.svg" alt="" />
-      <img class="card-icon" src="../images/icons/share.svg" alt="" />
+      <img
+        class="card-icon"
+        src="../images/icons/share.svg"
+        alt="Share to facebook"
+        onclick="share()"
+      />
     </div>
   </div>
-</div>
-<div id="india_popup" class="popup">
-  <div id="india_popup_content" class="popup_content experience_popup">
-    <span class="close_popup_button" onclick="togglePopup('india_popup')"
-      >×</span
-    >
-    <h1>India</h1>
-    <p>Author:</p>
-    <img
-      src="../images/experience_images/india.png"
-      alt="India"
-      class="main_picture"
-    />
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis
-      vitae magna sit amet aliquam. Nulla eu lorem elementum, gravida purus eu,
-      suscipit diam. Ut vitae est nec ligula imperdiet tincidunt. Donec
-      malesuada odio a ante interdum iaculis. Suspendisse potenti. Sed accumsan,
-      mi ac euismod commodo, orci sem dapibus orci, luctus suscipit risus tortor
-      eu lectus. Aliquam suscipit nibh quis diam vestibulum, sed ultrices enim
-      volutpat. Nulla ut ligula ac urna euismod interdum. Cras vel justo
-      ullamcorper, interdum enim quis, viverra enim. Nulla eget odio mauris.
-      Pellentesque pretium orci viverra, condimentum sem a, dignissim sapien.
-      Donec vestibulum tempor facilisis. Donec nec diam in elit commodo placerat
-      ac vitae metus. Proin a accumsan justo. Suspendisse a orci feugiat,
-      dignissim sapien mattis, pharetra libero. Mauris sit amet augue in dolor
-      blandit ornare eu a arcu. Vivamus at semper nulla. Phasellus augue ipsum,
-    </p>
-    <div class="social_bar">
-      <p class="like_count">368</p>
-      <img class="card-icon" src="../images/icons/heart.svg" alt="" />
-      <p class="comment_count">24</p>
-      <img class="card-icon" src="../images/icons/chat-left-quote.svg" alt="" />
-      <img class="card-icon" src="../images/icons/share.svg" alt="" />
+  <div id="india_popup" class="popup">
+    <div id="india_popup_content" class="popup_content experience_popup">
+      <span class="close_popup_button" onclick="togglePopup('india_popup')"
+        >×</span
+      >
+      <h1>India</h1>
+      <p>Author:</p>
+      <img
+        src="../images/experience_images/india.png"
+        alt="India"
+        class="main_picture"
+      />
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis
+        vitae magna sit amet aliquam. Nulla eu lorem elementum, gravida purus
+        eu, suscipit diam. Ut vitae est nec ligula imperdiet tincidunt. Donec
+        malesuada odio a ante interdum iaculis. Suspendisse potenti. Sed
+        accumsan, mi ac euismod commodo, orci sem dapibus orci, luctus suscipit
+        risus tortor eu lectus. Aliquam suscipit nibh quis diam vestibulum, sed
+        ultrices enim volutpat. Nulla ut ligula ac urna euismod interdum. Cras
+        vel justo ullamcorper, interdum enim quis, viverra enim. Nulla eget odio
+        mauris. Pellentesque pretium orci viverra, condimentum sem a, dignissim
+        sapien. Donec vestibulum tempor facilisis. Donec nec diam in elit
+        commodo placerat ac vitae metus. Proin a accumsan justo. Suspendisse a
+        orci feugiat, dignissim sapien mattis, pharetra libero. Mauris sit amet
+        augue in dolor blandit ornare eu a arcu. Vivamus at semper nulla.
+        Phasellus augue ipsum,
+      </p>
+      <div class="social_bar">
+        <p class="like_count" id="popupLike4">368</p>
+        <img
+          class="card-icon"
+          src="../images/icons/heart.svg"
+          alt="Like post"
+          id="heartPopup4"
+          alt=""
+          onclick="like(4)"
+        />
+        <p class="comment_count">24</p>
+        <img
+          class="card-icon"
+          src="../images/icons/chat-left-quote.svg"
+          alt=""
+        />
+        <img
+          class="card-icon"
+          src="../images/icons/share.svg"
+          alt="Share to facebook"
+          onclick="share()"
+        />
+      </div>
     </div>
   </div>
-</div>
-<div id="sydney_popup" class="popup">
-  <div id="sydney_popup_content" class="popup_content experience_popup">
-    <span class="close_popup_button" onclick="togglePopup('sydney_popup')"
-      >×</span
-    >
-    <h1>USA</h1>
-    <p>Author:</p>
-    <img
-      src="../images/experience_images/sydney.png"
-      alt="Sydney"
-      class="main_picture"
-    />
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis
-      vitae magna sit amet aliquam. Nulla eu lorem elementum, gravida purus eu,
-      suscipit diam. Ut vitae est nec ligula imperdiet tincidunt. Donec
-      malesuada odio a ante interdum iaculis. Suspendisse potenti. Sed accumsan,
-      mi ac euismod commodo, orci sem dapibus orci, luctus suscipit risus tortor
-      eu lectus. Aliquam suscipit nibh quis diam vestibulum, sed ultrices enim
-      volutpat. Nulla ut ligula ac urna euismod interdum. Cras vel justo
-      ullamcorper, interdum enim quis, viverra enim. Nulla eget odio mauris.
-    </p>
-    <div class="social_bar">
-      <p class="like_count">350</p>
-      <img class="card-icon" src="../images/icons/heart.svg" alt="" />
-      <p class="comment_count">36</p>
-      <img class="card-icon" src="../images/icons/chat-left-quote.svg" alt="" />
-      <img class="card-icon" src="../images/icons/share.svg" alt="" />
+  <div id="sydney_popup" class="popup">
+    <div id="sydney_popup_content" class="popup_content experience_popup">
+      <span class="close_popup_button" onclick="togglePopup('sydney_popup')"
+        >×</span
+      >
+      <h1>USA</h1>
+      <p>Author:</p>
+      <img
+        src="../images/experience_images/sydney.png"
+        alt="Sydney"
+        class="main_picture"
+      />
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis
+        vitae magna sit amet aliquam. Nulla eu lorem elementum, gravida purus
+        eu, suscipit diam. Ut vitae est nec ligula imperdiet tincidunt. Donec
+        malesuada odio a ante interdum iaculis. Suspendisse potenti. Sed
+        accumsan, mi ac euismod commodo, orci sem dapibus orci, luctus suscipit
+        risus tortor eu lectus. Aliquam suscipit nibh quis diam vestibulum, sed
+        ultrices enim volutpat. Nulla ut ligula ac urna euismod interdum. Cras
+        vel justo ullamcorper, interdum enim quis, viverra enim. Nulla eget odio
+        mauris.
+      </p>
+      <div class="social_bar">
+        <p class="like_count" id="popupLike5">350</p>
+        <img
+          class="card-icon"
+          src="../images/icons/heart.svg"
+          alt="Like post"
+          id="heartPopup5"
+          alt=""
+          onclick="like(5)"
+        />
+        <p class="comment_count">36</p>
+        <img
+          class="card-icon"
+          src="../images/icons/chat-left-quote.svg"
+          alt=""
+        />
+        <img
+          class="card-icon"
+          src="../images/icons/share.svg"
+          alt="Share to facebook"
+          onclick="share()"
+        />
+      </div>
     </div>
   </div>
-</div>
-<div id="marrocco_popup" class="popup">
-  <div id="marrocco_popup_content" class="popup_content experience_popup">
-    <span class="close_popup_button" onclick="togglePopup('marrocco_popup')"
-      >×</span
-    >
-    <h1>Marrocco</h1>
-    <p>Author:</p>
-    <img
-      src="../images/experience_images/marrocco.png"
-      alt="Marrocco"
-      class="main_picture"
-    />
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis
-      vitae magna sit amet aliquam. Nulla eu lorem elementum, gravida purus eu,
-      suscipit diam. Ut vitae est nec ligula imperdiet tincidunt. Donec
-      malesuada odio a ante interdum iaculis. Suspendisse potenti. Sed accumsan,
-      mi ac euismod commodo, orci sem dapibus orci, luctus suscipit risus tortor
-      eu lectus. Aliquam suscipit nibh quis diam vestibulum, sed ultrices enim
-      volutpat. Nulla ut ligula ac urna euismod interdum. Cras vel justo
-      ullamcorper, interdum enim quis, viverra enim. Nulla eget odio mauris.
-      Pellentesque pretium orci viverra, condimentum sem a, dignissim sapien.
-      Donec vestibulum tempor facilisis. Donec nec diam in elit commodo placerat
-    </p>
-    <div class="social_bar">
-      <p class="like_count">312</p>
-      <img class="card-icon" src="../images/icons/heart.svg" alt="" />
-      <p class="comment_count">18</p>
-      <img class="card-icon" src="../images/icons/chat-left-quote.svg" alt="" />
-      <img class="card-icon" src="../images/icons/share.svg" alt="" />
+  <div id="marrocco_popup" class="popup">
+    <div id="marrocco_popup_content" class="popup_content experience_popup">
+      <span class="close_popup_button" onclick="togglePopup('marrocco_popup')"
+        >×</span
+      >
+      <h1>Marrocco</h1>
+      <p>Author:</p>
+      <img
+        src="../images/experience_images/marrocco.png"
+        alt="Marrocco"
+        class="main_picture"
+      />
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis
+        vitae magna sit amet aliquam. Nulla eu lorem elementum, gravida purus
+        eu, suscipit diam. Ut vitae est nec ligula imperdiet tincidunt. Donec
+        malesuada odio a ante interdum iaculis. Suspendisse potenti. Sed
+        accumsan, mi ac euismod commodo, orci sem dapibus orci, luctus suscipit
+        risus tortor eu lectus. Aliquam suscipit nibh quis diam vestibulum, sed
+        ultrices enim volutpat. Nulla ut ligula ac urna euismod interdum. Cras
+        vel justo ullamcorper, interdum enim quis, viverra enim. Nulla eget odio
+        mauris. Pellentesque pretium orci viverra, condimentum sem a, dignissim
+        sapien. Donec vestibulum tempor facilisis. Donec nec diam in elit
+        commodo placerat
+      </p>
+      <div class="social_bar">
+        <p class="like_count" id="popupLike6">312</p>
+        <img
+          class="card-icon"
+          src="../images/icons/heart.svg"
+          alt="Like post"
+          id="heartPopup6"
+          alt=""
+          onclick="like(6)"
+        />
+        <p class="comment_count">18</p>
+        <img
+          class="card-icon"
+          src="../images/icons/chat-left-quote.svg"
+          alt=""
+        />
+        <img
+          class="card-icon"
+          src="../images/icons/share.svg"
+          alt="Share to facebook"
+          onclick="share()"
+        />
+      </div>
     </div>
   </div>
-</div>
-<div id="carneval_popup" class="popup">
-  <div id="carneval_popup_content" class="popup_content experience_popup">
-    <span class="close_popup_button" onclick="togglePopup('carneval_popup')"
-      >×</span
-    >
-    <h1>Carneval, Rio de Janeiro</h1>
-    <p>Author:</p>
-    <img
-      src="../images/experience_images/rio_canival.png"
-      alt="Carneval, rio"
-      class="main_picture"
-    />
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis
-      vitae magna sit amet aliquam. Nulla eu lorem elementum, gravida purus eu,
-      suscipit diam. Ut vitae est nec ligula imperdiet tincidunt. Donec
-      malesuada odio a ante interdum iaculis. Suspendisse potenti. Sed accumsan,
-      mi ac euismod commodo, orci sem dapibus orci, luctus suscipit risus tortor
-      eu lectus. Aliquam suscipit nibh quis diam vestibulum, sed ultrices enim
-      volutpat. Nulla ut ligula ac urna euismod interdum. Cras vel justo
-      ullamcorper, interdum enim quis, viverra enim. Nulla eget odio mauris.
-      Pellentesque pretium orci viverra, condimentum sem a, dignissim sapien.
-    </p>
-    <div class="social_bar">
-      <p class="like_count">309</p>
-      <img class="card-icon" src="../images/icons/heart.svg" alt="" />
-      <p class="comment_count">41</p>
-      <img class="card-icon" src="../images/icons/chat-left-quote.svg" alt="" />
-      <img class="card-icon" src="../images/icons/share.svg" alt="" />
+  <div id="carneval_popup" class="popup">
+    <div id="carneval_popup_content" class="popup_content experience_popup">
+      <span class="close_popup_button" onclick="togglePopup('carneval_popup')"
+        >×</span
+      >
+      <h1>Carneval, Rio de Janeiro</h1>
+      <p>Author:</p>
+      <img
+        src="../images/experience_images/rio_canival.png"
+        alt="Carneval, rio"
+        class="main_picture"
+      />
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis
+        vitae magna sit amet aliquam. Nulla eu lorem elementum, gravida purus
+        eu, suscipit diam. Ut vitae est nec ligula imperdiet tincidunt. Donec
+        malesuada odio a ante interdum iaculis. Suspendisse potenti. Sed
+        accumsan, mi ac euismod commodo, orci sem dapibus orci, luctus suscipit
+        risus tortor eu lectus. Aliquam suscipit nibh quis diam vestibulum, sed
+        ultrices enim volutpat. Nulla ut ligula ac urna euismod interdum. Cras
+        vel justo ullamcorper, interdum enim quis, viverra enim. Nulla eget odio
+        mauris. Pellentesque pretium orci viverra, condimentum sem a, dignissim
+        sapien.
+      </p>
+      <div class="social_bar">
+        <p class="like_count" id="popupLike7">309</p>
+        <img
+          class="card-icon"
+          src="../images/icons/heart.svg"
+          alt="Like post"
+          id="heartPopup7"
+          alt=""
+          onclick="like(7)"
+        />
+        <p class="comment_count">41</p>
+        <img
+          class="card-icon"
+          src="../images/icons/chat-left-quote.svg"
+          alt=""
+        />
+        <img
+          class="card-icon"
+          src="../images/icons/share.svg"
+          alt="Share to facebook"
+          onclick="share()"
+        />
+      </div>
     </div>
   </div>
-</div>
-<div id="santorini_popup" class="popup">
-  <div id="santorini_popup_content" class="popup_content experience_popup">
-    <span class="close_popup_button" onclick="togglePopup('santorini_popup')"
-      >×</span
-    >
-    <h1>Santorini, Greece</h1>
-    <p>Author:</p>
-    <img
-      src="../images/experience_images/santorini.jpeg"
-      alt="Santorini"
-      class="main_picture"
-    />
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis
-      vitae magna sit amet aliquam. Nulla eu lorem elementum, gravida purus eu,
-      suscipit diam. Ut vitae est nec ligula imperdiet tincidunt. Donec
-      malesuada odio a ante interdum iaculis. Suspendisse potenti. Sed accumsan,
-      mi ac euismod commodo, orci sem dapibus orci, luctus suscipit risus tortor
-      eu lectus. Aliquam suscipit nibh quis diam vestibulum, sed ultrices enim
-      volutpat. Nulla ut ligula ac urna euismod interdum. Cras vel justo
-      ullamcorper, interdum enim quis, viverra enim. Nulla eget odio mauris.
-      Pellentesque pretium orci viverra, condimentum sem a, dignissim sapien.
-      Donec vestibulum tempor facilisis. Donec nec diam in elit commodo placerat
-      ac vitae metus. Proin a accumsan justo. Suspendisse a orci feugiat,
-      dignissim sapien mattis, pharetra libero. Mauris sit amet augue in dolor
-      blandit ornare eu a arcu. Vivamus at semper nulla. Phasellus augue ipsum,
-      egestas sit amet massa eget, rutrum laoreet nulla. Aenean dignissim,
-    </p>
-    <div class="social_bar">
-      <p class="like_count">303</p>
-      <img class="card-icon" src="../images/icons/heart.svg" alt="" />
-      <p class="comment_count">29</p>
-      <img class="card-icon" src="../images/icons/chat-left-quote.svg" alt="" />
-      <img class="card-icon" src="../images/icons/share.svg" alt="" />
+  <div id="santorini_popup" class="popup">
+    <div id="santorini_popup_content" class="popup_content experience_popup">
+      <span class="close_popup_button" onclick="togglePopup('santorini_popup')"
+        >×</span
+      >
+      <h1>Santorini, Greece</h1>
+      <p>Author:</p>
+      <img
+        src="../images/experience_images/santorini.jpeg"
+        alt="Santorini"
+        class="main_picture"
+      />
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis
+        vitae magna sit amet aliquam. Nulla eu lorem elementum, gravida purus
+        eu, suscipit diam. Ut vitae est nec ligula imperdiet tincidunt. Donec
+        malesuada odio a ante interdum iaculis. Suspendisse potenti. Sed
+        accumsan, mi ac euismod commodo, orci sem dapibus orci, luctus suscipit
+        risus tortor eu lectus. Aliquam suscipit nibh quis diam vestibulum, sed
+        ultrices enim volutpat. Nulla ut ligula ac urna euismod interdum. Cras
+        vel justo ullamcorper, interdum enim quis, viverra enim. Nulla eget odio
+        mauris. Pellentesque pretium orci viverra, condimentum sem a, dignissim
+        sapien. Donec vestibulum tempor facilisis. Donec nec diam in elit
+        commodo placerat ac vitae metus. Proin a accumsan justo. Suspendisse a
+        orci feugiat, dignissim sapien mattis, pharetra libero. Mauris sit amet
+        augue in dolor blandit ornare eu a arcu. Vivamus at semper nulla.
+        Phasellus augue ipsum, egestas sit amet massa eget, rutrum laoreet
+        nulla. Aenean dignissim,
+      </p>
+      <div class="social_bar">
+        <p class="like_count" id="popupLike8">303</p>
+        <img
+          class="card-icon"
+          src="../images/icons/heart.svg"
+          alt="Like post"
+          id="heartPopup8"
+          alt=""
+          onclick="like(8)"
+        />
+        <p class="comment_count">29</p>
+        <img
+          class="card-icon"
+          src="../images/icons/chat-left-quote.svg"
+          alt=""
+        />
+        <img
+          class="card-icon"
+          src="../images/icons/share.svg"
+          alt="Share to facebook"
+          onclick="share()"
+        />
+      </div>
     </div>
   </div>
 </div>

@@ -1,15 +1,25 @@
 function like(postnr) {
-  const likecount = document.getElementById("like" + postnr);
-  var heartIcon = document.getElementById("heart" + postnr);
-  var likecountInt = parseInt(likecount.innerHTML);
+  const likecountSmall = document.getElementById("smallLike" + postnr);
+  const likecountPopup = document.getElementById("popupLike" + postnr);
+  var heartIconSmall = document.getElementById("heartSmall" + postnr);
+  var heartIconPopup = document.getElementById("heartPopup" + postnr);
 
-  if (heartIcon.src == "http://127.0.0.1:5500/images/icons/heart.svg") {
-    heartIcon.src = "http://127.0.0.1:5500/images/icons/heart-fill.svg";
-    likecountInt++;
-    likecount.innerHTML = likecountInt;
+  console.log(likecountSmall);
+  var likecountSmallInt = parseInt(likecountSmall.innerHTML);
+  var likecountPopupInt = parseInt(likecountPopup.innerHTML);
+
+  if (heartIconSmall.src == "http://127.0.0.1:5500/images/icons/heart.svg") {
+    heartIconSmall.src = "http://127.0.0.1:5500/images/icons/heart-fill.svg";
+    heartIconPopup.src = "http://127.0.0.1:5500/images/icons/heart-fill.svg";
+
+    likecountSmallInt++;
+    likecountPopupInt++;
   } else {
-    likecountInt--;
-    heartIcon.src = "http://127.0.0.1:5500/images/icons/heart.svg";
+    likecountSmallInt--;
+    likecountPopupInt--;
+    heartIconSmall.src = "http://127.0.0.1:5500/images/icons/heart.svg";
+    heartIconPopup.src = "http://127.0.0.1:5500/images/icons/heart.svg";
   }
-  likecount.innerHTML = likecountInt;
+  likecountSmall.innerHTML = likecountSmallInt;
+  likecountPopup.innerHTML = likecountPopupInt;
 }
