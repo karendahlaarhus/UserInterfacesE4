@@ -199,4 +199,37 @@ input[type="range"] {
 
 .dropdown:hover .dropbtn {
   background-color: rgb(179, 132, 123);
+/* For my profile */
+
+
+.menu_myprofile {
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 20px;
+}
+
+.menu_myprofile a {
+  background-color: #d4a9a9;
+  padding: 5px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: rgb(255, 255, 255);
+}
+
+.middle_myprofile {
+  float: left;
+  float: top;
+  width: 60%;
+  padding: 20px;
+}
+
+
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu_myprofile, .middle_myprofile {
+    width: 100%;
+  }
 }
