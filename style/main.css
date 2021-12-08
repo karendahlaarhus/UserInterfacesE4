@@ -101,3 +101,9 @@ body {
 .card img:hover {
   cursor: pointer;
 }
+
+/* Search */
+#search_button {
+    background-color: #407ba5;
+    color: white;
+}
