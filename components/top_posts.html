@@ -7,7 +7,7 @@
           src="../images/experience_images/bali.png"
           class="card-img-top"
           alt="..."
-          onclick="toggleMapPopup('bali_modal')"
+          onclick="togglePopup('bali_popup')"
         />
         <div class="card-body">
           <p class="card-text">
@@ -16,10 +16,26 @@
           </p>
         </div>
         <div class="social_bar">
-          <p class="like_count">432</p>
-          <img class="card-icon" src="../images/icons/heart.png" alt="" />
+          <p class="like_count" id="like1">432</p>
+          <img
+            class="card-icon"
+            src="../images/icons/heart.svg"
+            alt="Like post"
+            id="heart1"
+            onclick="like(1)"
+          />
           <p class="comment_count">54</p>
-          <img class="card-icon" src="../images/icons/comment.png" alt="" />
+          <img
+            class="card-icon"
+            src="../images/icons/chat-left-quote.svg"
+            alt=""
+          />
+          <img
+            class="card-icon"
+            src="../images/icons/share.svg"
+            alt="Share to facebook"
+            onclick="share()"
+          />
         </div>
       </div>
     </div>
@@ -29,6 +45,7 @@
           src="../images/experience_images/brazil.jpeg"
           class="card-img-top"
           alt="..."
+          onclick="togglePopup('brazil_popup')"
         />
         <div class="card-body">
           <p class="card-text">
@@ -37,10 +54,26 @@
           </p>
         </div>
         <div class="social_bar">
-          <p class="like_count">412</p>
-          <img class="card-icon" src="../images/icons/heart.png" alt="" />
+          <p class="like_count" id="like2">412</p>
+          <img
+            class="card-icon"
+            src="../images/icons/heart.svg"
+            alt="Like post"
+            id="heart2"
+            onclick="like(2)"
+          />
           <p class="comment_count">13</p>
-          <img class="card-icon" src="../images/icons/comment.png" alt="" />
+          <img
+            class="card-icon"
+            src="../images/icons/chat-left-quote.svg"
+            alt=""
+          />
+          <img
+            class="card-icon"
+            src="../images/icons/share.svg"
+            alt="Share to facebook"
+            onclick="share()"
+          />
         </div>
       </div>
     </div>
@@ -49,7 +82,8 @@
         <img
           src="../images/experience_images/capetown.png"
           class="card-img-top"
-          alt="..."
+          alt="Cape town"
+          onclick="togglePopup('capetown_popup')"
         />
         <div class="card-body">
           <p class="card-text">
@@ -58,10 +92,26 @@
           </p>
         </div>
         <div class="social_bar">
-          <p class="like_count">372</p>
-          <img class="card-icon" src="../images/icons/heart.png" alt="" />
+          <p class="like_count" id="like3">372</p>
+          <img
+            class="card-icon"
+            src="../images/icons/heart.svg"
+            alt="Like post"
+            id="heart3"
+            onclick="like(3)"
+          />
           <p class="comment_count">40</p>
-          <img class="card-icon" src="../images/icons/comment.png" alt="" />
+          <img
+            class="card-icon"
+            src="../images/icons/chat-left-quote.svg"
+            alt=""
+          />
+          <img
+            class="card-icon"
+            src="../images/icons/share.svg"
+            alt="Share to facebook"
+            onclick="share()"
+          />
         </div>
       </div>
     </div>
@@ -70,7 +120,8 @@
         <img
           src="../images/experience_images/india.png"
           class="card-img-top"
-          alt="..."
+          alt="India"
+          onclick="togglePopup('india_popup')"
         />
         <div class="card-body">
           <p class="card-text">
@@ -79,10 +130,27 @@
           </p>
         </div>
         <div class="social_bar">
-          <p class="like_count">368</p>
-          <img class="card-icon" src="../images/icons/heart.png" alt="" />
+          <p class="like_count" id="like4">368</p>
+          <img
+            class="card-icon"
+            src="../images/icons/heart.svg"
+            alt="Like post"
+            id="heart4"
+            alt=""
+            onclick="like(4)"
+          />
           <p class="comment_count">24</p>
-          <img class="card-icon" src="../images/icons/comment.png" alt="" />
+          <img
+            class="card-icon"
+            src="../images/icons/chat-left-quote.svg"
+            alt=""
+          />
+          <img
+            class="card-icon"
+            src="../images/icons/share.svg"
+            alt="Share to facebook"
+            onclick="share()"
+          />
         </div>
       </div>
     </div>
@@ -93,19 +161,37 @@
         <img
           src="../images/experience_images/sydney.png"
           class="card-img-top"
-          alt="..."
+          alt="Sydney"
+          onclick="togglePopup('sydney_popup')"
         />
         <div class="card-body">
           <p class="card-text">
             See the Sydney Opera house and Bondi Beach, or use Sydney as a start
-            for a tour of Australia.
+            for a tour of entire Oceanian continent.
           </p>
         </div>
         <div class="social_bar">
-          <p class="like_count">350</p>
-          <img class="card-icon" src="../images/icons/heart.png" alt="" />
+          <p class="like_count" id="like5">350</p>
+          <img
+            class="card-icon"
+            src="../images/icons/heart.svg"
+            alt="Like post"
+            id="heart5"
+            alt=""
+            onclick="like(5)"
+          />
           <p class="comment_count">36</p>
-          <img class="card-icon" src="../images/icons/comment.png" alt="" />
+          <img
+            class="card-icon"
+            src="../images/icons/chat-left-quote.svg"
+            alt=""
+          />
+          <img
+            class="card-icon"
+            src="../images/icons/share.svg"
+            alt="Share to facebook"
+            onclick="share()"
+          />
         </div>
       </div>
     </div>
@@ -114,7 +200,8 @@
         <img
           src="../images/experience_images/marrocco.png"
           class="card-img-top"
-          alt="..."
+          alt="Marrocco"
+          onclick="togglePopup('marrocco_popup')"
         />
         <div class="card-body">
           <p class="card-text">
@@ -123,10 +210,27 @@
           </p>
         </div>
         <div class="social_bar">
-          <p class="like_count">312</p>
-          <img class="card-icon" src="../images/icons/heart.png" alt="" />
+          <p class="like_count" id="like6">312</p>
+          <img
+            class="card-icon"
+            src="../images/icons/heart.svg"
+            alt="Like post"
+            id="heart6"
+            alt=""
+            onclick="like(6)"
+          />
           <p class="comment_count">18</p>
-          <img class="card-icon" src="../images/icons/comment.png" alt="" />
+          <img
+            class="card-icon"
+            src="../images/icons/chat-left-quote.svg"
+            alt=""
+          />
+          <img
+            class="card-icon"
+            src="../images/icons/share.svg"
+            alt="Share to facebook"
+            onclick="share()"
+          />
         </div>
       </div>
     </div>
@@ -135,7 +239,8 @@
         <img
           src="../images/experience_images/rio_canival.png"
           class="card-img-top"
-          alt="..."
+          alt="Carneval"
+          onclick="togglePopup('carneval_popup')"
         />
         <div class="card-body">
           <p class="card-text">
@@ -144,10 +249,27 @@
           </p>
         </div>
         <div class="social_bar">
-          <p class="like_count">309</p>
-          <img class="card-icon" src="../images/icons/heart.png" alt="" />
+          <p class="like_count" id="like7">309</p>
+          <img
+            class="card-icon"
+            src="../images/icons/heart.svg"
+            alt="Like post"
+            id="heart7"
+            alt=""
+            onclick="like(7)"
+          />
           <p class="comment_count">41</p>
-          <img class="card-icon" src="../images/icons/comment.png" alt="" />
+          <img
+            class="card-icon"
+            src="../images/icons/chat-left-quote.svg"
+            alt=""
+          />
+          <img
+            class="card-icon"
+            src="../images/icons/share.svg"
+            alt="Share to facebook"
+            onclick="share()"
+          />
         </div>
       </div>
     </div>
@@ -157,6 +279,7 @@
           src="../images/experience_images/santorini.jpeg"
           class="card-img-top"
           alt="..."
+          onclick="togglePopup('santorini_popup')"
         />
         <div class="card-body">
           <p class="card-text">
@@ -165,10 +288,27 @@
           </p>
         </div>
         <div class="social_bar">
-          <p class="like_count">303</p>
-          <img class="card-icon" src="../images/icons/heart.png" alt="" />
+          <p class="like_count" id="like8">303</p>
+          <img
+            class="card-icon"
+            src="../images/icons/heart.svg"
+            alt="Like post"
+            id="heart8"
+            alt=""
+            onclick="like(8)"
+          />
           <p class="comment_count">29</p>
-          <img class="card-icon" src="../images/icons/comment.png" alt="" />
+          <img
+            class="card-icon"
+            src="../images/icons/chat-left-quote.svg"
+            alt=""
+          />
+          <img
+            class="card-icon"
+            src="../images/icons/share.svg"
+            alt="Share to facebook"
+            onclick="share()"
+          />
         </div>
       </div>
     </div>

@@ -1,9 +1,9 @@
 <div id="myexperiences_posts">
   <div class="row" id="row1">
-    <div class="col-sm">
+    <div class="col-sm" id="card01">
       <div class="card" style="width: 18rem">
         <img
-          src="../images/experience_images/bali.png"
+          src="../images/experience_images/stockholm.png"
           class="card-img-top"
           alt="..."
         />
@@ -13,12 +13,41 @@
             bulk of the card's content.
           </p>
         </div>
+        <div class="social_bar">
+          <img
+            class="card-icon"
+            src="../images/icons/trash.svg"
+            alt="Delete experience"
+            onclick="deleteExperience('01')"
+          />
+          <p class="like_count" id="like01">0</p>
+          <img
+            class="card-icon"
+            src="../images/icons/heart.svg"
+            alt="Like post"
+            id="heart01"
+            alt=""
+            onclick="like(01)"
+          />
+          <p class="comment_count">0</p>
+          <img
+            class="card-icon"
+            src="../images/icons/chat-left-quote.svg"
+            alt=""
+          />
+          <img
+            class="card-icon"
+            src="../images/icons/share.svg"
+            alt="Share to facebook"
+            onclick="share()"
+          />
+        </div>
       </div>
     </div>
-    <div class="col-sm">
+    <div class="col-sm" id="card02">
       <div class="card" style="width: 18rem">
         <img
-          src="../images/experience_images/brazil.jpeg"
+          src="../images/experience_images/tokyo.png"
           class="card-img-top"
           alt="..."
         />
@@ -28,20 +57,34 @@
             bulk of the card's content.
           </p>
         </div>
-      </div>
-    </div>
-    <div class="col-sm">
-      <div class="card" style="width: 18rem">
-        <img
-          src="../images/experience_images/capetown.png"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
+        <div class="social_bar">
+          <img
+            class="card-icon"
+            src="../images/icons/trash.svg"
+            alt="Delete experience"
+            onclick="deleteExperience('02')"
+          />
+          <p class="like_count" id="like02">0</p>
+          <img
+            class="card-icon"
+            src="../images/icons/heart.svg"
+            alt="Like post"
+            id="heart02"
+            alt=""
+            onclick="like(02)"
+          />
+          <p class="comment_count">0</p>
+          <img
+            class="card-icon"
+            src="../images/icons/chat-left-quote.svg"
+            alt=""
+          />
+          <img
+            class="card-icon"
+            src="../images/icons/share.svg"
+            alt="Share to facebook"
+            onclick="share()"
+          />
         </div>
       </div>
     </div>

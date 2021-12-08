@@ -1,4 +1,62 @@
-/*
+// Function to search for experiences
+function myFunction() {
+  var input, filter, cards, cardContainer, title, i;
+  input = document.getElementById("search_input");
+  filter = input.value.toUpperCase();
+  cardContainer = document.getElementById("top_experiences");
+  cards = cardContainer.getElementsByClassName("card");
+
+  // Search in card text for the value from input
+  for (i = 0; i < cards.length; i++) {
+    title = cards[i].querySelector(".card-text");
+    if (title.innerText.toUpperCase().indexOf(filter) > -1) {
+      cards[i].style.display = "";
+    } else {
+      cards[i].style.display = "none";
+    }
+  }
+}
+
+
+/* 
+// Denne mangler noe greier. Tror de andre er bedre forslag da
+$("#search_input").on("keyup", function() {
+  var input = $(this).val().toUpperCase();
+  var visibleCards = 0;
+  var hiddenCards = 0;
+
+  $(".card").append($("<div class='card-group card-group-filter'></div>"));
+
+
+  $(".card-text").each(function() {
+    if ($(this).data("string").toUpperCase().indexOf(input) < 0) {
+
+      $(".card-group.card-group-filter:first-of-type").append($(this));
+      $(this).hide();
+      hiddenCards++;
+
+    } else {
+
+      $(".card-group.card-group-filter:last-of-type").prepend($(this));
+      $(this).show();
+      visibleCards++;
+
+      if (((visibleCards % 4) == 0)) {
+        $(".container").append($("<div class='card-group card-group-filter'></div>"));
+      }
+    }
+  });
+  $(".card-group").each(function() {
+    if ($(this).find("div").length == 0) {
+      $(this).remove();
+    }
+  })
+});
+*/
+
+
+
+/* 
 // Filter popular users based in written in search field. 
 $(document).ready(function(){ 
   $("#search_input").on("keyup", function() {
@@ -14,14 +72,29 @@ $(document).ready(function(){
 
 // Problemet er om vi bruker denne funksjonen har ikke søkeknappen noe formål
 // Tror ikke det er så brukervennlig ?? 
-$(document).ready(function() { 
+/*$(document).ready(function() { 
   $("#search_input").on("keyup", function() {
     var value = $(this).val().toLowerCase();
     $("#top_experiences .card .card-body .card-text").filter(function() {
       alert($(this).text().toLowerCase());
     });
   });
+});*/
+
+
+/* $(".form-control").on("keyup", function() {
+  var input = $(this).val().toUpperCase();
+
+  $(".card").each(function() {
+    if ($(this).data("string").toUpperCase().indexOf(input) < 0) {
+      $(this).hide();
+    } else {
+      $(this).show();
+    }
+  })
 });
+*/
+
 
 /*
 const searchButton = document.getElementById("search_button"); //receives search-button
@@ -76,3 +149,4 @@ const handleClickResetButton = () => {
 searchButton.addEventListener("click", handleClickSearchButton);
 resetButton.addEventListener("click", handleClickResetButton);
 */
+

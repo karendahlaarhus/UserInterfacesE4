@@ -1,6 +1,9 @@
 function addExperience() {
-  add();
   togglePopup("addexperience_popup");
+  const title = document.getElementById("experienceTitle").value;
+  if (title != "") {
+    add();
+  }
 }
 
 const add = () => {
@@ -58,4 +61,9 @@ const add = () => {
 const createCollection = () => {
   togglePopup("create_collection_popup");
 };
-const deleteExperience = () => {};
+const deleteExperience = (nr) => {
+  console.log("card" + nr);
+  const card = document.getElementById("card" + nr);
+
+  card.parentNode.removeChild(card);
+};
