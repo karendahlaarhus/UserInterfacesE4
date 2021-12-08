@@ -18,6 +18,22 @@ body {
   margin: 15vh 0;
 }
 
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.nav_btn {
+  width: 100px;
+  padding: 8px;
+  margin-top: 3px;
+  background-color: #407ba5;
+}
+
+.nav-item {
+  margin: 5px;
+}
+
 .title {
   background-color: #407ba5;
   margin: auto;
@@ -55,6 +71,21 @@ body {
   width: auto;
   overflow: hidden;
 }
+#popularPostHeader {
+  text-align: center;
+}
+
+.social_bar {
+  padding: 5px 0;
+  border-top: solid lightgray 0.1px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.social_bar p {
+  margin: 0;
+}
 
 /* Top users */
 .avatar {
@@ -63,6 +94,11 @@ body {
   overflow: hidden;
 }
 
+#popularUserHeader {
+  text-align: center;
+}
+
+/* My experiences */
 .toolbar {
   text-align: end;
 }
@@ -81,22 +117,6 @@ body {
   margin-right: 20px;
   margin-left: 5px;
 }
-.social_bar {
-  padding: 5px 0;
-  border-top: solid lightgray 0.1px;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-}
-
-.social_bar p {
-  margin: 0;
-}
-
-.navbar-brand {
-  display: flex;
-  align-items: center;
-}
 
 .card img:hover {
   cursor: pointer;
@@ -107,6 +127,12 @@ body {
   background-color: #407ba5;
   color: white;
 }
+
+.search_div {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
 .slider {
   -webkit-appearance: none;
   width: 100%;
@@ -168,9 +194,6 @@ input[type="range"] {
 .dropdown {
   position: relative;
   display: inline-block;
-  padding: 16px;
-  width: 200px;
-  margin-left: 50px;
 }
 
 .dropdown-content {
@@ -199,8 +222,8 @@ input[type="range"] {
 
 .dropdown:hover .dropbtn {
   background-color: rgb(179, 132, 123);
+}
 /* For my profile */
-
 
 .menu_myprofile {
   float: left;
@@ -225,11 +248,10 @@ input[type="range"] {
   padding: 20px;
 }
 
-
-
 @media only screen and (max-width: 620px) {
   /* For mobile phones: */
-  .menu_myprofile, .middle_myprofile {
+  .menu_myprofile,
+  .middle_myprofile {
     width: 100%;
   }
 }

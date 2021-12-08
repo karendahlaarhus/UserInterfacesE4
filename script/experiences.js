@@ -36,6 +36,35 @@ const add = () => {
       desc +
       `</p>
             </div>
+            <div class="social_bar">
+          <img
+            class="card-icon"
+            src="../images/icons/trash.svg"
+            alt="Delete experience"
+            onclick="deleteExperience('01')"
+          />
+          <p class="like_count" id="like01">0</p>
+          <img
+            class="card-icon"
+            src="../images/icons/heart.svg"
+            alt="Like post"
+            id="heart01"
+            alt=""
+            onclick="like(01)"
+          />
+          <p class="comment_count">0</p>
+          <img
+            class="card-icon"
+            src="../images/icons/chat-left-quote.svg"
+            alt=""
+          />
+          <img
+            class="card-icon"
+            src="../images/icons/share.svg"
+            alt="Share to facebook"
+            onclick="share()"
+          />
+        </div>
         </div>
       </div>    
     </div>`;
@@ -53,6 +82,35 @@ const add = () => {
       desc +
       `</p>
           </div>
+          <div class="social_bar">
+          <img
+            class="card-icon"
+            src="../images/icons/trash.svg"
+            alt="Delete experience"
+            onclick="deleteExperience('01')"
+          />
+          <p class="like_count" id="like01">0</p>
+          <img
+            class="card-icon"
+            src="../images/icons/heart.svg"
+            alt="Like post"
+            id="heart01"
+            alt=""
+            onclick="like(01)"
+          />
+          <p class="comment_count">0</p>
+          <img
+            class="card-icon"
+            src="../images/icons/chat-left-quote.svg"
+            alt=""
+          />
+          <img
+            class="card-icon"
+            src="../images/icons/share.svg"
+            alt="Share to facebook"
+            onclick="share()"
+          />
+        </div>
       </div>
     </div>`;
   }
