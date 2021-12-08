@@ -17,7 +17,6 @@ function myFunction() {
   }
 }
 
-
 /* 
 // Denne mangler noe greier. Tror de andre er bedre forslag da
 $("#search_input").on("keyup", function() {
@@ -54,8 +53,6 @@ $("#search_input").on("keyup", function() {
 });
 */
 
-
-
 /* 
 // Filter popular users based in written in search field. 
 $(document).ready(function(){ 
@@ -71,7 +68,7 @@ $(document).ready(function(){
 */
 
 // Problemet er om vi bruker denne funksjonen har ikke søkeknappen noe formål
-// Tror ikke det er så brukervennlig ?? 
+// Tror ikke det er så brukervennlig ??
 /*$(document).ready(function() { 
   $("#search_input").on("keyup", function() {
     var value = $(this).val().toLowerCase();
@@ -80,7 +77,6 @@ $(document).ready(function(){
     });
   });
 });*/
-
 
 /* $(".form-control").on("keyup", function() {
   var input = $(this).val().toUpperCase();
@@ -94,7 +90,6 @@ $(document).ready(function(){
   })
 });
 */
-
 
 /*
 const searchButton = document.getElementById("search_button"); //receives search-button
@@ -149,4 +144,3 @@ const handleClickResetButton = () => {
 searchButton.addEventListener("click", handleClickSearchButton);
 resetButton.addEventListener("click", handleClickResetButton);
 */
-
