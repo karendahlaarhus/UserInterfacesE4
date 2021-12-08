@@ -5,9 +5,6 @@
     >
     <h2 class="form_header">Sign up</h2>
     <div id="signup_form">
-      <p class="form_section_title">
-        <strong>Account information</strong>
-      </p>
       <div class="input_group">
         <label class="input_label">Username:</label>
         <input type="text" id="username_input" class="form_input" required />
@@ -21,9 +18,7 @@
           required
         />
       </div>
-      <p class="form_section_title">
-        <strong>Personal information</strong>
-      </p>
+
       <div class="input_group">
         <label class="input_label">Name: </label>
         <input type="text" id="firstname_input" class="form_input" required />
@@ -45,20 +40,19 @@
         <input type="file" id="profileimg_input" class="form_input" />
       </div>
       <div class="input_group">
-        <label class="input_label"
+        <label class="input_label terms"
           >I have read and accepted the Terms of Use</label
         >
-        <input type="checkbox" id="terms" class="form_input" required />
+        <input type="checkbox" id="terms" class="term" required />
       </div>
 
       <button
         id="delete_button"
-        class="form_btn_smaller"
+        class="form_btn clear_btn"
         onclick="clear_signup()"
       >
-        Delete
+        Clear form
       </button>
-      <br />
       <button id="signup_button" class="form_btn" onclick="signup()">
         Sign up
       </button>

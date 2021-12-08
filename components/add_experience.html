@@ -6,27 +6,30 @@
       >×</span
     >
     <h2 class="form_header">Add a new experience</h2>
-    <input
-      type="text"
-      name="title"
-      id="experienceTitle"
-      placeholder="Add title here"
-    />
-    <p>Add collaborator here</p>
-    <input type="file" id="experienceImg" name="img" accept="image/*" />
-    <input
-      type="textarea"
-      placeholder="Add a description here"
-      id="experienceDesc"
-    />
-    <div id="add_experience_form">
-      <button
-        id="post_experience_button"
-        class="form_btn"
-        onclick="addExperience()"
-      >
-        Post
-      </button>
+    <div id="addexperience-inputs">
+      <div>
+        <label for="ttitle">Title:</label>
+        <input type="text" name="title" id="experienceTitle" />
+      </div>
+
+      <div>
+        <label for="experienceImg">Upload images here:</label>
+        <input type="file" id="experienceImg" name="img" accept="image/*" />
+      </div>
+      <div>
+        <label for="description">Description:</label>
+        <textarea id="experienceDesc" cols="46" rows="5"></textarea>
+      </div>
+
+      <div id="add_experience_form">
+        <button
+          id="post_experience_button"
+          class="form_btn"
+          onclick="addExperience()"
+        >
+          Post
+        </button>
+      </div>
     </div>
   </div>
 </div>
@@ -39,7 +42,6 @@
       >×</span
     >
     <h2 class="form_header">Create collection</h2>
-
     <button id="create_collection_button" class="form_btn">Create</button>
   </div>
 </div>

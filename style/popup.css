@@ -60,6 +60,7 @@
 .popup .main_picture {
   width: 350px;
   height: auto;
+  margin-bottom: 20px;
 }
 
 /* Styling login and signup forms */
@@ -68,12 +69,9 @@
 }
 
 .form_input {
-  margin-left: 10px;
-  border-radius: 5px;
-}
-
-.form_section_title {
-  font-size: large;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 8px;
 }
 
 .form_btn {
@@ -85,15 +83,29 @@
   font-family: inherit;
   margin-top: 10px;
   cursor: pointer;
+  float: right;
 }
 
-.form_btn_smaller {
-  border: 1px solid grey;
-  border-radius: 5px;
-  height: 20px;
-  padding: 2px 15px 2px 15px;
-  background-color: #f5f5f5;
-  font-family: inherit;
-  margin-top: 10px;
-  cursor: pointer;
+.clear_btn {
+  float: left;
+}
+
+#addexperience_popup_content button {
+  float: right;
+}
+
+#addexperience-inputs div {
+  margin-top: 20px;
+}
+
+#addexperience-inputs input {
+  width: 100%;
+}
+
+.terms {
+  font-style: italic;
+}
+
+#plantrip_page {
+  margin-bottom: 60px;
 }

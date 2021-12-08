@@ -255,3 +255,10 @@ input[type="range"] {
     width: 100%;
   }
 }
+
+.interest_filter {
+  margin-bottom: 20px;
+}
+#plantrip_page {
+  text-align: center;
+}

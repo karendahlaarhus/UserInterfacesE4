@@ -27,7 +27,7 @@ const add = () => {
       <div class="col-sm">
         <div class="card" style="width: 18rem">
             <img
-                src="../images/experience_images/bali.png"
+                src="../images/experience_images/madrid.jpeg"
                 class="card-img-top"
                 alt="..."
             />
@@ -73,7 +73,7 @@ const add = () => {
       `<div class="col-sm">
       <div class="card" style="width: 18rem">
           <img
-              src="../images/experience_images/bali.png"
+              src="../images/experience_images/madrid.jpeg"
               class="card-img-top"
               alt="..."
           />
