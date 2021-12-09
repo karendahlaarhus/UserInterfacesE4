@@ -8,6 +8,7 @@ function addExperience() {
 
 const add = () => {
   const desc = document.getElementById("experienceDesc").value;
+  const img = document.getElementById("imageSrc").value;
 
   const allRows = document.querySelectorAll(".row");
   const existingRow = allRows.length;
@@ -27,7 +28,9 @@ const add = () => {
       <div class="col-sm">
         <div class="card" style="width: 18rem">
             <img
-                src="../images/experience_images/madrid.jpeg"
+                src="` +
+      img +
+      `"
                 class="card-img-top"
                 alt="..."
             />
@@ -73,7 +76,9 @@ const add = () => {
       `<div class="col-sm">
       <div class="card" style="width: 18rem">
           <img
-              src="../images/experience_images/madrid.jpeg"
+              src="` +
+      img +
+      `""
               class="card-img-top"
               alt="..."
           />
